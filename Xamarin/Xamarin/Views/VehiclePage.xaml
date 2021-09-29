@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Xamarin.ViewModels;assembly=Xamarin"
+             x:Class="Xamarin.Views.VehiclePage"
+             Title="All Vehicle">
+
+    <ContentPage.BindingContext>
+        <viewModels:VehicleViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout"
+                     Command="{Binding LogoutCommand}"
+                     Clicked="LogoutMenuItem_Clicked"
+                     Priority="1"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Padding="20">
+
+        <!--<Entry Text="{Binding AccessToken}" />-->
+
+        <Button Command="{Binding GetVehiclesCommand}"
+                Text="Get All Vehicle"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="DodgerBlue"/>
+
+        <Button Text="Add new Vehicle"
+                Clicked="NavigateToAddNewVehicle_Clicked"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="DeepPink"/>
+
+        <Button Text="Search Vehicle"
+                Clicked="NavigateToSearchvehicle_Clicked"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="ForestGreen"/>
+
+        <Button Text="Add new Note"
+                Clicked="NavigateToSearcNotes_Clicked"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="YellowGreen"/>
+
+
+        <ListView ItemsSource="{Binding Vehicles}"
+                  HasUnevenRows="True"
+                  ItemTapped="VehiclesListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="0,10">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30*" />
+                                    <ColumnDefinition Width="30*" />
+                                    <ColumnDefinition Width="30*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Grid.Column="0" Text="{Binding Description}"/>
+                                <Label  Grid.Column="1" Text="{Binding Name}"/>
+                                <Label Grid.Column="2" Text="{Binding Model}"/>
+                            </Grid>
+
+
+                            <!--<Label Text="{Binding Title}"
+                                   FontSize="24"
+                                   TextColor="RoyalBlue" />
+                            <Label Text="{Binding Description}" />
+                            <Label Text="{Binding Name}" />-->
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

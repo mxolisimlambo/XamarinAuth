@@ -1,0 +1,166 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models11\ViewModels\**" />
+    <Compile Remove="ViewModels\Address\**" />
+    <Compile Remove="ViewModels\AppModule\**" />
+    <Compile Remove="ViewModels\AppSection\**" />
+    <Compile Remove="ViewModels\Base\**" />
+    <Compile Remove="ViewModels\CityTown\**" />
+    <Compile Remove="ViewModels\Client\**" />
+    <Compile Remove="ViewModels\DeliveryItem\**" />
+    <Compile Remove="ViewModels\DeliveryNote\**" />
+    <Compile Remove="ViewModels\Driver\**" />
+    <Compile Remove="ViewModels\Employee\**" />
+    <Compile Remove="ViewModels\EndPoint\**" />
+    <Compile Remove="ViewModels\IncidentOutcome\**" />
+    <Compile Remove="ViewModels\Incident\**" />
+    <Compile Remove="ViewModels\Region\**" />
+    <Compile Remove="ViewModels\RoleModuleRight\**" />
+    <Compile Remove="ViewModels\RoleSectionRight\**" />
+    <Compile Remove="ViewModels\Role\**" />
+    <Compile Remove="ViewModels\Shift\**" />
+    <Compile Remove="ViewModels\TimeShift\**" />
+    <Compile Remove="ViewModels\TripIncident\**" />
+    <Compile Remove="ViewModels\Trip\**" />
+    <Compile Remove="ViewModels\TruckModel\**" />
+    <Compile Remove="ViewModels\Truck\**" />
+    <Compile Remove="ViewModels\UserModuleRight\**" />
+    <Compile Remove="ViewModels\UserSectionRight\**" />
+    <EmbeddedResource Remove="Models11\ViewModels\**" />
+    <EmbeddedResource Remove="ViewModels\Address\**" />
+    <EmbeddedResource Remove="ViewModels\AppModule\**" />
+    <EmbeddedResource Remove="ViewModels\AppSection\**" />
+    <EmbeddedResource Remove="ViewModels\Base\**" />
+    <EmbeddedResource Remove="ViewModels\CityTown\**" />
+    <EmbeddedResource Remove="ViewModels\Client\**" />
+    <EmbeddedResource Remove="ViewModels\DeliveryItem\**" />
+    <EmbeddedResource Remove="ViewModels\DeliveryNote\**" />
+    <EmbeddedResource Remove="ViewModels\Driver\**" />
+    <EmbeddedResource Remove="ViewModels\Employee\**" />
+    <EmbeddedResource Remove="ViewModels\EndPoint\**" />
+    <EmbeddedResource Remove="ViewModels\IncidentOutcome\**" />
+    <EmbeddedResource Remove="ViewModels\Incident\**" />
+    <EmbeddedResource Remove="ViewModels\Region\**" />
+    <EmbeddedResource Remove="ViewModels\RoleModuleRight\**" />
+    <EmbeddedResource Remove="ViewModels\RoleSectionRight\**" />
+    <EmbeddedResource Remove="ViewModels\Role\**" />
+    <EmbeddedResource Remove="ViewModels\Shift\**" />
+    <EmbeddedResource Remove="ViewModels\TimeShift\**" />
+    <EmbeddedResource Remove="ViewModels\TripIncident\**" />
+    <EmbeddedResource Remove="ViewModels\Trip\**" />
+    <EmbeddedResource Remove="ViewModels\TruckModel\**" />
+    <EmbeddedResource Remove="ViewModels\Truck\**" />
+    <EmbeddedResource Remove="ViewModels\UserModuleRight\**" />
+    <EmbeddedResource Remove="ViewModels\UserSectionRight\**" />
+    <None Remove="Models11\ViewModels\**" />
+    <None Remove="ViewModels\Address\**" />
+    <None Remove="ViewModels\AppModule\**" />
+    <None Remove="ViewModels\AppSection\**" />
+    <None Remove="ViewModels\Base\**" />
+    <None Remove="ViewModels\CityTown\**" />
+    <None Remove="ViewModels\Client\**" />
+    <None Remove="ViewModels\DeliveryItem\**" />
+    <None Remove="ViewModels\DeliveryNote\**" />
+    <None Remove="ViewModels\Driver\**" />
+    <None Remove="ViewModels\Employee\**" />
+    <None Remove="ViewModels\EndPoint\**" />
+    <None Remove="ViewModels\IncidentOutcome\**" />
+    <None Remove="ViewModels\Incident\**" />
+    <None Remove="ViewModels\Region\**" />
+    <None Remove="ViewModels\RoleModuleRight\**" />
+    <None Remove="ViewModels\RoleSectionRight\**" />
+    <None Remove="ViewModels\Role\**" />
+    <None Remove="ViewModels\Shift\**" />
+    <None Remove="ViewModels\TimeShift\**" />
+    <None Remove="ViewModels\TripIncident\**" />
+    <None Remove="ViewModels\Trip\**" />
+    <None Remove="ViewModels\TruckModel\**" />
+    <None Remove="ViewModels\Truck\**" />
+    <None Remove="ViewModels\UserModuleRight\**" />
+    <None Remove="ViewModels\UserSectionRight\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models11\Address.cs" />
+    <Compile Remove="Models11\AppModule.cs" />
+    <Compile Remove="Models11\AppSection.cs" />
+    <Compile Remove="Models11\AppUser.cs" />
+    <Compile Remove="Models11\Client.cs" />
+    <Compile Remove="Models11\DeliveryItem.cs" />
+    <Compile Remove="Models11\DeliveryItemScan.cs" />
+    <Compile Remove="Models11\DeliveryNote.cs" />
+    <Compile Remove="Models11\Driver.cs" />
+    <Compile Remove="Models11\Employee.cs" />
+    <Compile Remove="Models11\EmployeeTest.cs" />
+    <Compile Remove="Models11\EndPoint.cs" />
+    <Compile Remove="Models11\Entity.cs" />
+    <Compile Remove="Models11\Enum.cs" />
+    <Compile Remove="Models11\IEntity.cs" />
+    <Compile Remove="Models11\Incidenct.cs" />
+    <Compile Remove="Models11\IncidentOutcome.cs" />
+    <Compile Remove="Models11\RoleAccessRight.cs" />
+    <Compile Remove="Models11\Shift.cs" />
+    <Compile Remove="Models11\ShiptrackContextFactory.cs" />
+    <Compile Remove="Models11\ShiptrackDbContext.cs" />
+    <Compile Remove="Models11\Trip.cs" />
+    <Compile Remove="Models11\Truck.cs" />
+    <Compile Remove="Models11\TruckModel.cs" />
+    <Compile Remove="Models11\UserModuleRight.cs" />
+    <Compile Remove="Models11\UserSectionRight.cs" />
+    <Compile Remove="ViewModels\IndexViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="ServiceStack.Interfaces" Version="5.12.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Plugin.Calendar" Version="1.4.5304" />
+  </ItemGroup>
+
+ 
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\AddVehiclePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EditOrDeleteVehiclePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NoteEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models11\" />
+  </ItemGroup>
+</Project>
